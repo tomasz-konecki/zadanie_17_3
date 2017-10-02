@@ -23,6 +23,7 @@ app.post('/updateNote/:note', (req, res) => {
         if (err) throw err;
         console.log('File updated');
     });
+    res.send(stringifyFile);
 })
 
 app.listen(3000);
